@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Functions</title>
+</head>
+<body>
+  <h2>String Functions</h2>  
+  <script>
+var line = "John is a good boy";
+console.log(line.length);
+console.log(line.indexOf("oo"));//Finds the first occurence of the item.
+console.log(line.indexOf("o"));
+console.log(line.lastIndexOf("o"));//Finds the last occurence of the item.
+
+console.log(line.slice(2, 6));//hn i bcoz the last index is not included(here its 6th index), slice allows negative index
+console.log(line.substring(2, 6));//hn i bcoz the last index is not included(here its 6th index).
+console.log(line.substr(2, 7));//2n parameter here is the length, here it means 7 characters starting from index 2 including index 2
+
+console.log(line.toUpperCase());
+console.log(line.toLowerCase());
+
+var data = "     Today is a good day        outside     ";//removes leading and trailing spaces
+console.log(data);
+console.log(data.trim());
+
+console.log(line);
+var result = line.replace("John", "Peter");// does not change the original string
+console.log(result);
+
+console.log(line.charAt(3));// 3rd index
+console.log(line[5]);
+console.log(line.charCodeAt(3));// 3rd index item's UTF code
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array filter JS</title>
+</head>
+<body>
+    <h1>Array filter JS</h1>
+    <script>
+        let AgeArray = [16, 32, 12, 80, 54];
+ 
+        //I want all the people eligible for voting
+        function eligibility(age) {
+            return age > 18;
+        }
+        let eligibleArr = AgeArray.filter(eligibility);
+        console.log(eligibleArr);
+    </script>
+</body>
+</html>

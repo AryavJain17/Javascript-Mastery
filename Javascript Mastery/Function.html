@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions in JS</title>
+</head>
+<body>
+    <h2>Functions in JS</h2>
+    <ul>
+        <li>Function helps us avoid repeating code over and over again</li>
+        <li>Function is a piece of reusable code that will written once and used as amny times as we want</li>
+        <li>Functions start with function keyword and has a name</li>
+        <li>Function can take parameter or they can be of non parameter</li>
+        <li>Function may or may not have a return type</li>
+        <li>code inside a function only gets executed when its called</li>
+    </ul>
+    <script>
+        // Defining if function
+        // Function with no parameter
+        function addNumbers(){
+            console.log(5 + 7);
+        }
+        addNumbers();//calling of function
+//Function with 2 parameters, num1 and num2
+        function addTwoNumbers(num1, num2){
+            let result = num1 + num2
+            console.log(result);
+        }
+        addTwoNumbers(3, 4);//Calling of Functions with parameters
+// Default value of parameter is only used if the value for that parameter is not passed by calling the caller
+        function addTwoNumWithReturnAndDefaultValue(num1, num2=5) {
+            return num1+num2;
+        }
+        let out1 = addTwoNumWithReturnAndDefaultValue(22, 33);
+        console.log(out1);//55
+        let out2 = addTwoNumWithReturnAndDefaultValue(22);// as num2 value is not passed so it will take default value as 5
+        console.log(out2);//27
+    </script>
+</body>
+</html>

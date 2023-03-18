@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mth object in JS</title>
+</head>
+<body>
+    <h2>Math object in JS</h2>
+
+    <script>
+        let MathObj = Math;
+        console.log(MathObj);
+        console.log("Value of pi is " +MathObj.PI);
+
+        console.log("Rounding " +MathObj.round(25.88));
+        console.log("Exponential power 5 to the power of 3 "+MathObj.pow(5, 3));
+        console.log("Square root of 144 is "+MathObj.sqrt(144));
+
+        console.log("Ceil  "+Math.ceil(22.8));
+        console.log("Floor  "+Math.floor(22.8));
+
+        console.log(Math.abs(-6));
+
+        console.log("sine(pi) is " +MathObj.sin(Math.PI/2));
+        console.log("cos(pi) is " +MathObj.cos(Math.PI/2));
+        console.log("tan(pi) is " +MathObj.tan(Math.PI/2));
+
+        console.log("Max no. is "+ Math.max(21, 2, 45, 67));
+        console.log("Min no. is "+ Math.min(21, 2, 45, 67));
+
+        let randomNo = Math.random();//Gives a random no between 0 and 1
+        console.log(randomNo);
+
+        
+
+
+    </script>
+</body>
+</html>

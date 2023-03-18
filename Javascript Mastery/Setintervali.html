@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SetInterval in JS</title>
+</head>
+<body id="bodytag">
+    <h2>SetInterval function in JS</h2>
+    <div id="textArea"> Time in seconds: <span id="seconds"></span></div>
+
+    <script>
+        function Display(empName, empDept) {
+            console.log("Name: "+empName+ "& Department: " +empDept);
+        }
+       // Display("John", "Phy");
+       //setInterval(Display, 2000);
+      // setInterval(Display, 4000, "John", "Phy");// this function helps us execute only once another function after a certain time in(ms)
+      
+      let count = 0;
+      setInterval(function(){
+        count++;
+        document.querySelector('#seconds').innerHTML = count;
+      document.querySelector('#textArea').style.backgroundColor = '#00FFFF';
+       }, 1000);
+
+       //send otp, otp should expire in 30s, but user enters the otp within 30sec
+       // than you want to cancel the setTimeout so that otp should not expire
+       
+      let IntervalId = setInterval(Display, 5000, "John", "Phy");
+      console.log(`IntervalId is: ${IntervalId}`);
+
+      //let's cancel the 10s timeout with the help of timeout
+      clearInterval=(IntervalId); 
+       
+    </script>
+</body>
+</html>
